@@ -130,7 +130,6 @@ p{
   }
   
   #boton-contenedor{
-    position: relative;
     width: 80vw;
     height: 22vh;
     display: flex;
