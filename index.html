@@ -2,23 +2,41 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+    />
     <title>CSS Button Hover Effects</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
-      <h1>Window and Content Size Tracker</h1>
-    <h2>Window Size</h2>
-    <p>Width: <span id="window-width"></span> pixels</p>
-    <p>Height: <span id="window-height"></span> pixels</p>
-
-    <h2>Content Size</h2>
-    <div id="content-size">
-      <p>Width: <span id="content-width"></span> pixels</p>
-      <p>Height: <span id="content-height"></span> pixels</p>
-    </div>
-    </section>    
+      <div class="contenedor">
+        <h1>Window and Content Size Tracker</h1>
+        <div class="cuerpo" id="cuerpo">
+          <p>
+            Identifica y simula las medidas exactas de tu dispositivo móvil en
+            un instante. Optimiza tus diseños web para brindar una experiencia
+            impecable en cada pantalla. Simplifica tus pruebas, crea impacto en
+            dispositivos móviles y conquista a tus usuarios.
+          </p>
+          <div id="boton-contenedor">
+            <button id="boton" onclick="calcularMedidas()">Calcular medidas de su dispositivo</button>
+          </div>
+        </div>
+        <div class="loader" id="loader"></div>
+        <div class="resultados" id="resultados">
+          <div class="medidas" id="medidas">
+            <p>Medidas de la ventana:</p>
+            <p class="centrado">Ancho de la ventana: <span id="window-width"></span></p>
+            <p class="centrado">Altura de la ventana: <span id="window-height"></span></p>
+            <p>Medidas del contenido:</p>
+            <p class="centrado">Ancho del contenido: <span id="content-width"></span></p>
+            <p class="centrado">Altura del contenido: <span id="content-height"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
